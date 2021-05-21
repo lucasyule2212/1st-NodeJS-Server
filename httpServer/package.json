@@ -1,0 +1,6 @@
+{
+    "type": "module",
+    "dependencies": {
+        "whatwg-url": "^8.5.0"
+    }
+}

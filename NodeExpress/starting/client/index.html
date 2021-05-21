@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com Node Express</title>
+</head>
+<body>
+    <h1>Aprendendo Node Express!</h1>
+
+    <script>
+        fetch('http://192.168.0.206:5000/',{method:'post'})
+        .then(response=>{
+            return response.text();
+        }).then(html=>{
+            console.log(html);
+        })
+        fetch('http://192.168.0.206:5000/',{method:'put'})
+        .then(response=>{
+            return response.text();
+        }).then(html=>{
+            console.log(html);
+        })
+        fetch('http://192.168.0.206:5000/',{method:'delete'})
+        .then(response=>{
+            return response.text();
+        }).then(html=>{
+            console.log(html);
+        })
+    </script>
+</body>
+</html>
